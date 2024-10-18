@@ -30,7 +30,7 @@ namespace DemoMauiAppToEnpoint
 
             builder.Services.AddHttpClient("custom-httpclient", httpClient =>
             {
-                var baseAddress = DeviceInfo.Platform == DevicePlatform.Android ? "https://10.0.2.2:7047" : "https://localhost:7047";
+                var baseAddress = "http://amingomaa-001-site25.dtempurl.com";
                 httpClient.BaseAddress = new Uri(baseAddress);
             }).ConfigureHttpMessageHandlerBuilder(configBuilder =>
             {
